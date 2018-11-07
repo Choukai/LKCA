@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    	<link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+    	<link rel="stylesheet" type="text/css" href="/styles/simplemde.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+    	<script src="/js/simplemde.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+        <title>九林年代：林口高中畢業舞會</title>
+        <!-- RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script id="hr-template" type="text/x-handlebars-template"></script>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+        <style>
+        	.close.item
+			{
+			    display: none !important;
+			}
+			@media (max-width: 767px)
+			{
+			    .stackable.to.left .column
+			    {
+			        text-align: left !important;
+			    }
+			    .close.item
+			    {
+			        display: block !important;
+			    }
+			    #largeMainNav:not(.stackable)
+			    {
+			        display: none;
+			    }
+			}
+        </style>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+	</head>
+	
+	<body>
+		<!-- 置頂選單 -->
+        <nav id="largeMainNav" class="ts link inverted fluid large menu">
+            <!-- 縮排容器 -->
+            <div class="ts narrow container">
+                <!-- 主要標誌 -->
+                <a class="brand item" href="index.html">九林年代</a>
+                
+                <!-- 項目 -->
+                <a class="item" href="exhibit.html">靜態美展</a>
+                <a class="item" href="club.html">社團表演</a>
+                <a class="item" onclick="ts('#closableModal').modal('show')">活動流程</a>
+                <a class="item" href="organizer.html">主辦單位</a>
+                <a class="item" href="location.html">活動地點</a>
+                <a class="item" href="venue.html">會場地圖</a>
+                
+                <!-- 右側選單 -->
+                <div class="right menu">
+                    <a class="item" href="http://lkca.com.tw/">
+                        <i class="icon briefcase"> 班聯會官網</i>
+                    </a>
+                    <a class="close item" onclick="collapseMenu()"><i class="close icon"></i>關閉選單</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 手機專用置頂選單 -->
+	    <nav id="mobileMainNav" class="ts mobile only link inverted fluid large menu">
+	        
+	        <!-- 縮排容器 -->
+	        <div class="ts narrow container">
+	        
+	            <!-- 主要標誌 -->
+	            <a class="brand item" href="index.html">九林年代</a>
+	            <!-- / 主要標誌 -->
+	            
+	            <!-- 右側選單 -->
+	            <div class="right menu">
+	                
+	                <!-- 漢堡圖示 -->
+	                <a class="item" style="padding-left: 1em; padding-right: 1em; margin-right: -0.88rem;" onclick="expandMenu()"><i style="margin: 0" class="content icon"></i></a>
+	                <!-- / 漢堡圖示 -->
+	                
+	            </div>
+	            <!-- / 右側選單 -->
+	        
+	        </div>
+	        <!-- / 縮排容器 -->
+	        
+	    </nav>
+	    <!-- / 手機專用置頂選單 -->
+	    
+	    <!-- 選單腳本 -->
+	    <script>
+	        function expandMenu()
+	        {
+	            $('#largeMainNav').addClass('stackable');
+	            $('#mobileMainNav').addClass('hidden');
+	        }
+	        
+	        function collapseMenu()
+	        {
+	            $('#largeMainNav').removeClass('stackable');
+	            $('#mobileMainNav').removeClass('hidden');
+	        }
+	    </script>
+	    
+	    <div class="ts narrow container">
+    	
+	    	<div class="ts slate">
+			    <span class="header">九林年代：林口高中畢業舞會<br />社團表演</span>
+			    <span class="description">Linkou Senior High School Prom<br>Club Performance</span>
+			</div>
+			
+			<br><br>
+	    
+		    <header class="ts padded center aligned fluid slate">
+	    	    <img src="http://lkca.com.tw/images/club.png" width="100%" /><br /><br />
+	    	</header>
+    	</div>
+        
+        <div class="ts modals dimmer">
+            <dialog id="closableModal" class="ts closable tiny modal">
+                <div class="content">
+                    <p>網頁尚在製作中。<br>This page is coming soon.</p>
+                </div>
+                <div class="actions">
+                    <button class="ts positive button">
+                        Got it.
+                    </button>
+                </div>
+            </dialog>
+        </div>
+        
+        <script type="text/javascript">
+    		var isIE = navigator.userAgent.search("MSIE") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 7") > -1; 
+        	if (isIE7) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+    	</script>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    <br>
+	    <br>
+	    <br>
+<footer>
+	<div class="ts fluid container">
+	   <div class="ts fluid inverted segment">
+	        <h2 class="ts center aligned inverted header">
+                <span class="large device only">九林年代：林口高中畢業舞會</span>
+            <div class="sub header">Copyright © 2018 LKCA. All Rights Reserved.</div>
+            </h2>
+	    </div>
+	</div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

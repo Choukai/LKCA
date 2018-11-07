@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    	<link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+    	<link rel="stylesheet" type="text/css" href="/styles/simplemde.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+    	<script src="/js/simplemde.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+        <title>組織章程│林口班聯</title>
+        <!-- RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script id="hr-template" type="text/x-handlebars-template"></script>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+        <style>
+        	.close.item
+			{
+			    display: none !important;
+			}
+			@media (max-width: 767px)
+			{
+			    .stackable.to.left .column
+			    {
+			        text-align: left !important;
+			    }
+			    .close.item
+			    {
+			        display: block !important;
+			    }
+			    #largeMainNav:not(.stackable)
+			    {
+			        display: none;
+			    }
+			}
+        </style>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+	</head>
+	
+	<body>
+		<!-- 置頂選單 -->
+        <nav id="largeMainNav" class="ts link inverted fluid large menu">
+            <!-- 縮排容器 -->
+            <div class="ts narrow container">
+                <!-- 主要標誌 -->
+                <a class="brand item" href="index.html">林口班聯</a>
+                
+                <!-- 項目 -->
+                <a class="item" href="news.html">最新消息</a>
+                <a class="item" href="AOA.html">組織章程</a>
+                <a class="item" href="members.html">行政團隊</a>
+                <a class="item" href="calendar.html">行事曆</a>
+                <a class="item" onclick="ts('#closableModal').modal('show')">活動介紹</a>
+                <a class="item" href="dues.html">會費收支</a>
+                <a class="item" href="resource.html">公開資源</a>
+				<a class="item" href="http://club.lkca.com.tw/">社團網頁</a>
+                
+                <!-- 右側選單 -->
+                <div class="right menu">
+                    <a class="close item" onclick="collapseMenu()"><i class="close icon"></i>關閉選單</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 手機專用置頂選單 -->
+	    <nav id="mobileMainNav" class="ts mobile only link inverted fluid large menu">
+	        
+	        <!-- 縮排容器 -->
+	        <div class="ts narrow container">
+	        
+	            <!-- 主要標誌 -->
+	            <a class="brand item" href="index.html">林口高中班級聯合會</a>
+	            <!-- / 主要標誌 -->
+	            
+	            <!-- 右側選單 -->
+	            <div class="right menu">
+	                
+	                <!-- 漢堡圖示 -->
+	                <a class="item" style="padding-left: 1em; padding-right: 1em; margin-right: -0.88rem;" onclick="expandMenu()"><i style="margin: 0" class="content icon"></i></a>
+	                <!-- / 漢堡圖示 -->
+	                
+	            </div>
+	            <!-- / 右側選單 -->
+	        
+	        </div>
+	        <!-- / 縮排容器 -->
+	        
+	    </nav>
+	    <!-- / 手機專用置頂選單 -->
+	    
+	    <!-- 選單腳本 -->
+	    <script>
+	        function expandMenu()
+	        {
+	            $('#largeMainNav').addClass('stackable');
+	            $('#mobileMainNav').addClass('hidden');
+	        }
+	        
+	        function collapseMenu()
+	        {
+	            $('#largeMainNav').removeClass('stackable');
+	            $('#mobileMainNav').removeClass('hidden');
+	        }
+	    </script>
+        
+        <div class="ts narrow container">
+    	
+	    	<div class="ts slate">
+			    <span class="header">林口高中班級聯合會<br />組織章程</span>
+			    <span class="description">Linkou Senior High School Classes Association<br>Articles of Association</span>
+			</div>
+			
+			<br><br>
+            
+
+            壹、名稱：本會定名「新北市立林口高級中學班級代表聯合會」簡稱「班聯會」(以下稱本會)。<br /><br />
+            貳、宗旨<br />
+                <div class="ts ordered list">
+                    <div class="item">培養同學民主法治及自治精神。</div>
+                    <div class="item">聯繫同儕情誼，強化校園溝通，促進團體和諧進步。</div>
+                    <div class="item">主動推動並配合學校舉辦之各項全校性活動，充實校園生活。</div>
+                    <div class="item">培養積極愛護團體，具有高度服務熱忱及辦事能力之人才。</div>
+                </div>
+
+            <br />
+  
+            參、組織<br />
+                <div class="ts ordered list">
+                    <div class="item">全校同學為本會基本會員。</div>
+                    <div class="item">
+                        <div>班級代表</div>
+                        <div class="list">
+                            <div class="item">全校各班以班長及另選一位代表為班級代表。</div>
+                            <div class="item">資格：思想純正，品行端莊，理性熱心負責。</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>各級幹部</div>
+                        <div class="list">
+                            <div class="item">主席由全校學生投票選舉產生，得票最高者擔任之。</div>
+                            <div class="item">各工作組：自班級代表中產生</div>
+                                <div class="list">
+                                    <div class="item">設文宣、文書、活動、總務、設備、公關組。</div>
+                                    <div class="item">各組設組長一人(其下設組員數人)，組長由班代選舉產生，任一學期。</div>
+                                    <div class="item">全體班級代表配合各組活動。</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>   
+            <br />
+            肆、幹部職掌<br />
+                <div class="ts ordered list">
+                    <div class="item">主席：綜理全校班聯會會務，配合學校行政，設定規劃各項計畫性活動，召開班聯會。</div>
+                    <div class="item">副主席：襄助主席推展會務，若主席無法處理職務時由其代理職務時由其代理。</div>
+                    <div class="item">活動組：負責校內各項康樂、體育等活動籌備執行。</div>
+                    <div class="item">文宣組：宣傳校內各項活動訊息，製作各項問卷調查。</div>
+                    <div class="item">總務組：綜理班聯會之各項經費收支、保管，並依時公佈帳務收支。</div>
+                    <div class="item">公關組：負責對外接洽、對內聯繫溝通等事宜。</div>
+                    <div class="item">設備組：綜理各項器材保存，會議教室之申請。</div>
+                    <div class="item">文書組：綜理班聯會各項文書資料保存，各項會議之紀錄。</div>
+                </div>
+            <br />
+            伍、班聯會主席選舉<br />
+                <div class="ts ordered list">
+                   <div class="item">
+                        <div>資格：欲競選聯會主席，須符合下列資格。</div>
+                        <div class="list">
+                            <div class="item">無記過(含)處分。</div>
+                            <div class="item">競選前一學期平均學業成績及格，且無任一科目重修。</div>
+                        </div>
+                    </div>
+                    <div class="item">每學年結束前一個月由學務處召集會員開會，明訂選舉辦法，進行選舉各項工作。</div>
+                    <div class="item">候選人由各班自行推薦，並由學務處召集評選人評選候選人資格。</div>
+                    <div class="item">由各候選人發表政見，由全校學生進行表決，最高票者可當選為班聯會主席。</div>
+                </div>
+            <br />
+            陸、任期：班聯會主席任期為一學年，於各學年末重新選舉下一學年新任主席。<br /><br />
+            柒、辭退：班聯會幹部及組員有下列情形之一者應予辭退其職務<br />
+                <div class="ts ordered list">
+                    <div class="item">曠廢職責，經班聯會議決後予以退職。</div>
+                    <div class="item">違反校規受記過以上處分。</div>
+                    <div class="item">發生其他不可抗拒之事故，經班聯會議決或學校准其辭退者。</div>
+                </div>
+            <br />
+            捌、開會<br />
+                <div class="ts ordered list">
+                    <div class="item">班聯會會議每月一次於班聯會辦公室召開。(時間另訂)</div>
+                    <div class="item">班聯會幹部會議視需要不定期召開。</div>
+                </div>
+            <br />
+            玖、活動要領<br />
+                <div class="ts ordered list">
+                    <div class="item">班聯會各項活動不得違背校規及有關法令。</div>
+                    <div class="item">班聯會在學務處指導下，策劃校內各項學生活動，研討通過後發動全體同學響應參與。</div>
+                    <div class="item">班聯會議決事項，須經出席人數三分之二以上同意始為通過，通過後即代表全體學生意見，議決時應慎重。</div>
+                    <div class="item">應隨時與指導老師協商各項事項，不得獨斷獨行。</div>
+                    <div class="item">班聯會代表全體學生，在校內一切合法之活動，不得直接與校外聯繫。</div>
+                    <div class="item">幹部宜平時多探訪同學，遇有建設性意見供班聯會參考，並得在學校輔導下設置學生。</div>
+                    <div class="item">意見調查表作最佳的溝通橋樑。</div>
+                    <div class="item">於開會前一週公佈討論題綱，會後並公佈開會紀錄。</div>
+                </div>
+            <br />
+            拾、獎懲<br />
+                <div class="ts ordered list">
+                    <div class="item">在任職期間恪盡職守，確實扮演學生與學校間溝通橋樑角色成功者，可予以獎勵。</div>
+                    <div class="item">在任職期間怠忽職守，或未經班聯會議決，獨斷獨行，違反校規，破壞校規，破壞校譽者，可予以懲戒。</div>
+                </div>
+            <br />
+            拾壹、經費：由會員繳交會費。<br /><br />
+            拾貳、實施與修正：本組織章程經學務處會議通過，經校長核可後公佈實施，修正時亦同。<br />
+    
+        </div>
+        
+        <div class="ts modals dimmer">
+            <dialog id="closableModal" class="ts closable tiny modal">
+                <div class="content">
+                    <p>網頁尚在製作中。<br>This page is coming soon.</p>
+                </div>
+                <div class="actions">
+                    <button class="ts positive button">
+                        Got it.
+                    </button>
+                </div>
+            </dialog>
+        </div>
+        
+        <script type="text/javascript">
+    		var isIE = navigator.userAgent.search("MSIE") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 7") > -1; 
+        	if (isIE7) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+    	</script>
+    <br>
+	    <br>
+	    <br>
+	    <footer>
+	        <div class="ts fluid container">
+	            <div class="ts fluid inverted segment">
+	                <h2 class="ts center aligned inverted header">
+	                    <span class="large device only">Linkou Senior High School Classes Association</span>
+	                <div class="sub header">Copyright © 2017 LKCA. All Rights Reserved.</div>
+		                <div class="sub header">網頁建置：<a href="http://fb.me/LKIRC">資研社</a>、班聯會資訊組</div>
+	                </h2>
+	            </div>
+	        </div>
+	    </footer>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    </body>
+	    </html>

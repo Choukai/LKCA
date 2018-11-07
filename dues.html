@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    	<link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+    	<link rel="stylesheet" type="text/css" href="/styles/simplemde.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+    	<script src="/js/simplemde.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+		<title>會費收支│林口班聯</title>
+		<!-- RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script id="hr-template" type="text/x-handlebars-template"></script>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+        <style>
+        	.close.item
+			{
+			    display: none !important;
+			}
+			@media (max-width: 767px)
+			{
+			    .stackable.to.left .column{
+			        text-align: left !important;
+			    }
+			    .close.item{
+			        display: block !important;
+			    }
+			    #largeMainNav:not(.stackable){
+			        display: none;
+			    }
+			}
+			
+			.frame-container{
+
+				position:relative;
+				
+				padding-bottom:56.25%;
+				
+				padding-top:30px;height:0;overflow:hidden;
+			
+			}
+
+ 
+
+			.frame-container iframe,
+			
+			.frame-container object,
+			
+			.frame-container embed{
+			
+				position:absolute;
+				
+				top:0;
+				
+				left:0;
+					
+				width:100%;
+				
+				height:100%;
+	
+			}
+        </style>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+	</head>
+	
+	<body>
+		<!-- 置頂選單 -->
+        <nav id="largeMainNav" class="ts link inverted fluid large menu">
+            <!-- 縮排容器 -->
+            <div class="ts narrow container">
+                <!-- 主要標誌 -->
+                <a class="brand item" href="index.html">林口班聯</a>
+                
+                <!-- 項目 -->
+                <a class="item" href="news.html">最新消息</a>
+                <a class="item" href="AOA.html">組織章程</a>
+                <a class="item" href="members.html">行政團隊</a>
+                <a class="item" href="calendar.html">行事曆</a>
+                <a class="item" onclick="ts('#closableModal').modal('show')">活動介紹</a>
+                <a class="item" href="dues.html">會費收支</a>
+                <a class="item" href="resource.html">公開資源</a>
+				<a class="item" href="http://club.lkca.com.tw/">社團網頁</a>
+                
+                <!-- 右側選單 -->
+                <div class="right menu">
+                    <a class="close item" onclick="collapseMenu()"><i class="close icon"></i>關閉選單</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 手機專用置頂選單 -->
+	    <nav id="mobileMainNav" class="ts mobile only link inverted fluid large menu">
+	        
+	        <!-- 縮排容器 -->
+	        <div class="ts narrow container">
+	        
+	            <!-- 主要標誌 -->
+	            <a class="brand item" href="index.html">林口高中班級聯合會</a>
+	            <!-- / 主要標誌 -->
+	            
+	            <!-- 右側選單 -->
+	            <div class="right menu">
+	                
+	                <!-- 漢堡圖示 -->
+	                <a class="item" style="padding-left: 1em; padding-right: 1em; margin-right: -0.88rem;" onclick="expandMenu()"><i style="margin: 0" class="content icon"></i></a>
+	                <!-- / 漢堡圖示 -->
+	                
+	            </div>
+	            <!-- / 右側選單 -->
+	        
+	        </div>
+	        <!-- / 縮排容器 -->
+	        
+	    </nav>
+	    <!-- / 手機專用置頂選單 -->
+	    
+	    <!-- 選單腳本 -->
+	    <script>
+	        function expandMenu()
+	        {
+	            $('#largeMainNav').addClass('stackable');
+	            $('#mobileMainNav').addClass('hidden');
+	        }
+	        
+	        function collapseMenu()
+	        {
+	            $('#largeMainNav').removeClass('stackable');
+	            $('#mobileMainNav').removeClass('hidden');
+	        }
+	    </script>
+    	
+    	<div class="ts center aligned narrow container">
+    	
+	    	<div class="ts slate">
+			    <span class="header">林口高中班級聯合會<br />會費收支</span>
+			    <span class="description">Linkou Senior High School Classes Association<br />Income Statement</span>
+			</div>
+			
+			<br><br>
+			
+		<div class=frame-container>
+			<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTyMZmL1PbwNnoF_Av5xqqQCXKU5KdoVHz5SUJdREovIzI-lCUWwthKHOMz3LYufbGvj0oY39dvH1pb/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=true" height="600px" width="965px"></iframe>
+		</div>
+		
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- shop -->
+		<ins class="adsbygoogle"
+     		style="display:block"
+     		data-ad-client="ca-pub-2704863634090139"
+     		data-ad-slot="4335573800"
+     		data-ad-format="auto"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		
+		<div class="ts modals dimmer">
+            <dialog id="closableModal" class="ts closable tiny modal">
+                <div class="content">
+                    <p>網頁尚在製作中。<br>This page is coming soon.</p>
+                </div>
+                <div class="actions">
+                    <button class="ts positive button">
+                        Got it.
+                    </button>
+                </div>
+            </dialog>
+        </div>
+		
+		<script type="text/javascript">
+    		var isIE = navigator.userAgent.search("MSIE") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 7") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 10") > -1; 
+        	var isEdge = window.navigator.userAgent.indexOf("Edge") > -1
+        	if (isIE7) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE10) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isEdge) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+    	</script>
+
+	    <footer>
+	        <div class="ts fluid container">
+	            <div class="ts fluid inverted segment">
+	                <h2 class="ts center aligned inverted header">
+	                    <span class="large device only">Linkou Senior High School Classes Association</span>
+	                <div class="sub header">Copyright © 2017 LKCA. All Rights Reserved.</div>
+		                <div class="sub header">網頁建置：<a href="http://fb.me/LKIRC">資研社</a>、班聯會資訊組</div>
+	                </h2>
+	            </div>
+	        </div>
+	    </footer>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    </body>
+	    </html>

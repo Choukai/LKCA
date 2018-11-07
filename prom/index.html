@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    	<link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.2/tocas.css">
+    	<link rel="stylesheet" type="text/css" href="/styles/simplemde.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.2/tocas.js"></script>
+    	<script src="/js/simplemde.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+        <script id="hr-template" type="text/x-handlebars-template">
+        </script>
+		<title>九林年代: 林口高中畢業舞會</title>
+		<!-- RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+        	.close.item
+			{
+			    display: none !important;
+			}
+			@media (max-width: 767px)
+			{
+			    .stackable.to.left .column{
+			        text-align: left !important;
+			    }
+			    .close.item{
+			        display: block !important;
+			    }
+			    #largeMainNav:not(.stackable){
+			        display: none;
+			    }
+			}
+        </style>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+	</head>
+	
+	<body>
+		<!-- 置頂選單 -->
+        <nav id="largeMainNav" class="ts link inverted fluid large menu">
+            <!-- 縮排容器 -->
+            <div class="ts narrow container">
+                <!-- 主要標誌 -->
+                <a class="brand item" href="index.html">九林年代</a>
+                
+                <!-- 項目 -->
+                <a class="item" href="exhibit.html">靜態美展</a>
+                <a class="item" href="club.html">社團表演</a>
+                <a class="item" onclick="ts('#closableModal').modal('show')">活動流程</a>
+                <a class="item" href="organizer.html">主辦單位</a>
+                <a class="item" href="location.html">活動地點</a>
+                <a class="item" href="venue.html">會場地圖</a>
+                
+                <!-- 右側選單 -->
+                <div class="right menu">
+                    <a class="item" href="http://lkca.com.tw/">
+                        <i class="icon briefcase"> 班聯會官網</i>
+                    </a>
+                    <a class="close item" onclick="collapseMenu()"><i class="close icon"></i>關閉選單</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 手機專用置頂選單 -->
+	    <nav id="mobileMainNav" class="ts mobile only link inverted fluid large menu">
+	        
+	        <!-- 縮排容器 -->
+	        <div class="ts narrow container">
+	        
+	            <!-- 主要標誌 -->
+	            <a class="brand item" href="index.html">九林年代</a>
+	            <!-- / 主要標誌 -->
+	            
+	            <!-- 右側選單 -->
+	            <div class="right menu">
+	                
+	                <!-- 漢堡圖示 -->
+	                <a class="item" style="padding-left: 1em; padding-right: 1em; margin-right: -0.88rem;" onclick="expandMenu()"><i style="margin: 0" class="content icon"></i></a>
+	                <!-- / 漢堡圖示 -->
+	                
+	            </div>
+	            <!-- / 右側選單 -->
+	        
+	        </div>
+	        <!-- / 縮排容器 -->
+	        
+	    </nav>
+	    <!-- / 手機專用置頂選單 -->
+	    
+	    <!-- 選單腳本 -->
+	    <script>
+	        function expandMenu()
+	        {
+	            $('#largeMainNav').addClass('stackable');
+	            $('#mobileMainNav').addClass('hidden');
+	        }
+	        
+	        function collapseMenu()
+	        {
+	            $('#largeMainNav').removeClass('stackable');
+	            $('#mobileMainNav').removeClass('hidden');
+	        }
+	    </script>
+    	
+    	<header class="ts padded center aligned fluid slate">
+    	    <img class="large device only" src="http://lkca.com.tw/images/web.png" width="100%" />
+    	    <div class="mobile only"><img src="http://lkca.com.tw/images/mobile.png" width="100%" /></div>
+    	    <br /><br />
+    	    <button class="ts positive basic huge button" onclick="ts('#closableModal').modal('show')">前往購票</button>
+    	</header>
+    	
+    	<header class="ts padded center aligned fluid slate">
+            <img class="large device only" src="http://lkca.com.tw/images/about.png" width="100%" />
+            <div class="mobile only">
+                延續過往形式、傳承本校文化，今年畢業舞會定名為「九『林』年代」，其意涵即為「九〇年代」。
+                <br /><br />
+                活動 Slogan 則為「Our Generation」，想要表現出「接下來，是屬於我們的世代」。
+                <br /><br />
+                韶光荏苒，前塵舊事於回首間盡數掠過眼前浩瀚無際的星空，浮華美夢亦持續醞釀，遊走於光影交錯的邊界，即將步至灑滿月光的通道上的你，那雙熠熠生輝的瞳眸會盛滿憧憬與期待。
+                <br /><br />
+                即便壓力迫使一時隱忍委屈，赤子之心絕非現實這把利刃即能輕易劃傷，追求夢想的途中，有什麼是該堅持；又有什麼應當妥協？
+                <br /><br />
+                青春與夢想交織出的一篇樂章，每一個音符宛若命運似的，牽引我們邁開步伐朝未來奔馳，成就夢想路上也許跌跌撞撞又或許會遍體鱗傷，但挫折使人茁壯，這些足跡鍛造了現在的你，願天上的星星因你而綺麗。
+                <br /><br />
+                那繁華似錦的夏，就由仲夏之夜的「九『林』年代」作為序曲。
+            </div>
+        </header>
+    	
+    	<!-- 縮排容器 -->
+        <br /><br />
+        <div class="ts narrow container">
+            <h2 class="ts header">
+                <div class="content">
+                    About Prom of Linkou S.H. 
+                    <div class="sub header">關於畢業舞會</div>
+                </div>
+            </h2>
+            <div class="ts raised segment">
+                <h5>高中三年光陰稍縱即逝，畢業生即將邁入人生的下一個階段，亦逐漸走入社會，<br />欲藉由此活動建立正確的社交態度和社交禮儀、慶祝新的人生旅程即將啟程。<br />期許每位畢業生皆能捎上夢想勇往直前踏入成功大道，<br />也冀望能通過此活動讓畢業生在高中生活劃下最難忘、最精彩的休止符。</h5>
+            </div>
+            
+            <h2 class="ts header">
+                <div class="content">
+                    About Linkou S.H. Classes Association
+                    <div class="sub header">關於林口班聯</div>
+                </div>
+            </h2>
+            <div class="ts raised segment">
+                <h5>林口班聯，全名「新北市立林口高中班級聯合會」，旨在學生權益的提升，<br />一直以來我們皆致力於成為學生與學校間的良性溝通橋樑，<br />亦主辦、協辦各式校內活動，懷抱熱忱為學生服務是我們的核心價值。</h5>
+            </div>
+        </div>
+        
+        <div class="ts modals dimmer">
+            <dialog id="closableModal" class="ts closable tiny modal">
+                <div class="content">
+                    <iframe class="kktix" src="https://kktix.com/tickets_widget?slug=90s" frameborder="0" height="400" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                </div>
+                <div class="actions">
+                	<button class="ts positive button" onclick="javascript:location.href='https://lkca.kktix.cc/events/90s'">
+                        前往售票網站
+                    </button>
+                    <button class="ts negative button">
+                        X
+                    </button>
+                </div>
+            </dialog>
+        </div>
+        
+        <script type="text/javascript">
+    		var isIE = navigator.userAgent.search("MSIE") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 7") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 10") > -1; 
+        	var isEdge = window.navigator.userAgent.indexOf("Edge") > -1
+        	if (isIE7) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE10) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isEdge) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+    	</script>
+	<br>
+    <br>
+    <br>
+    <footer>
+        <div class="ts fluid container">
+            <div class="ts fluid inverted segment">
+                <h2 class="ts center aligned inverted header">
+                    <span class="large device only">九林年代：林口高中畢業舞會</span>
+                <div class="sub header">Copyright © 2018 LKCA. All Rights Reserved.</div>
+                </h2>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    </html>

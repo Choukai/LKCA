@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    	<link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+    	<link rel="stylesheet" type="text/css" href="/styles/simplemde.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+    	<script src="/js/simplemde.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+        <title>九林年代：林口高中畢業舞會</title>
+        <!-- RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script id="hr-template" type="text/x-handlebars-template"></script>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+        <style>
+        	.close.item
+			{
+			    display: none !important;
+			}
+			@media (max-width: 767px)
+			{
+			    .stackable.to.left .column
+			    {
+			        text-align: left !important;
+			    }
+			    .close.item
+			    {
+			        display: block !important;
+			    }
+			    #largeMainNav:not(.stackable)
+			    {
+			        display: none;
+			    }
+			}
+        </style>
+        <script>$(function(){ ts('.ts.dropdown:not(.basic)').dropdown(); })</script>
+	</head>
+	
+	<body>
+		<!-- 置頂選單 -->
+        <nav id="largeMainNav" class="ts link inverted fluid large menu">
+            <!-- 縮排容器 -->
+            <div class="ts narrow container">
+                <!-- 主要標誌 -->
+                <a class="brand item" href="index.html">九林年代</a>
+                
+                <!-- 項目 -->
+                <a class="item" href="exhibit.html">靜態美展</a>
+                <a class="item" href="club.html">社團表演</a>
+                <a class="item" onclick="ts('#closableModal').modal('show')">活動流程</a>
+                <a class="item" href="organizer.html">主辦單位</a>
+                <a class="item" href="location.html">活動地點</a>
+                <a class="item" href="venue.html">會場地圖</a>
+                
+                <!-- 右側選單 -->
+                <div class="right menu">
+                    <a class="item" href="http://lkca.com.tw/">
+                        <i class="icon briefcase"> 班聯會官網</i>
+                    </a>
+                    <a class="close item" onclick="collapseMenu()"><i class="close icon"></i>關閉選單</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 手機專用置頂選單 -->
+	    <nav id="mobileMainNav" class="ts mobile only link inverted fluid large menu">
+	        
+	        <!-- 縮排容器 -->
+	        <div class="ts narrow container">
+	        
+	            <!-- 主要標誌 -->
+	            <a class="brand item" href="index.html">九林年代</a>
+	            <!-- / 主要標誌 -->
+	            
+	            <!-- 右側選單 -->
+	            <div class="right menu">
+	                
+	                <!-- 漢堡圖示 -->
+	                <a class="item" style="padding-left: 1em; padding-right: 1em; margin-right: -0.88rem;" onclick="expandMenu()"><i style="margin: 0" class="content icon"></i></a>
+	                <!-- / 漢堡圖示 -->
+	                
+	            </div>
+	            <!-- / 右側選單 -->
+	        
+	        </div>
+	        <!-- / 縮排容器 -->
+	        
+	    </nav>
+	    <!-- / 手機專用置頂選單 -->
+	    
+	    <!-- 選單腳本 -->
+	    <script>
+	        function expandMenu()
+	        {
+	            $('#largeMainNav').addClass('stackable');
+	            $('#mobileMainNav').addClass('hidden');
+	        }
+	        
+	        function collapseMenu()
+	        {
+	            $('#largeMainNav').removeClass('stackable');
+	            $('#mobileMainNav').removeClass('hidden');
+	        }
+	    </script>
+	    
+	    <div class="ts narrow container">
+    	    <div class="ts slate">
+    		    <span class="header">九林年代：林口高中畢業舞會<br />活動地點</span>
+    		    <span class="description">Linkou Senior High School Prom<br>Activity Location</span>
+    		</div>
+    		<br /><br />
+    	    <header class="ts padded center aligned fluid slate">
+        	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30056.134803314762!2d121.35990242873419!3d25.062733216775833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc55b88efee3fed!2z5paw5YyX5biC56uL5p6X5Y-j6auY57Sa5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1522913728369" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>    
+        	</header>
+        </div>
+    	
+    	<br /><br />
+    	<div class="ts narrow container">
+    	
+    	    <div class="ts icon message">
+                <i class="target icon"></i>
+                <div class="content">
+                    <div class="header">地點</div>
+                    <p>新北市立林口高中 活動中心</p>
+                </div>
+            </div>
+            <div class="ts icon message">
+                <i class="map icon"></i>
+                <div class="content">
+                    <div class="header">地址</div>
+                    <p>新北市林口區仁愛路二段173號</p>
+                </div>
+            </div>
+        	<div class="ts icon message">
+                <i class="bus icon"></i>
+                <div class="content">
+                    <div class="header">搭乘公車：在林口高中站下車</div>
+                    <p>920 板橋（新莊）-林口</p>
+                    <p>925 蘆洲（三重）-林口</p>
+                    <p>946 內湖（港墘）-林口（經捷運A9)</p>
+                    <p>854 醒吾科技大學-林口（經捷運A8、A9)</p>
+                    <p>858 樹林（泰山）-林口</p>
+                    <p>898 迴龍（泰山）-林口（經捷運A9)</p>
+                    <p>1209 北門（新莊、泰山）-林口</p>
+                    <p>1210 台北車站-林口</p>
+                    <p>1211 台北市政府（松山機場）-林口</p>
+                    <p>1211A 台北市政府（松山機場）-林口</p>
+                    <div class="header">搭乘公車：在林口國中站下車（步行約 4 分鐘）</div>
+                    <p>786 板橋（新莊、泰山）-林口</p>
+                    <p>786區 新莊（泰山）-林口</p>
+                    <p>5063 桃園車站-林口</p>
+                    <p>5069 桃園（蘆竹）-林口</p>
+                    <p>5071 蘆竹（山鼻）-林口</p>
+                    <div class="header">搭乘公車：在空間樂園站下車（步行約 12 分鐘）</div>
+                    <p>708 南崁-林口</p>
+                    <p>708A 南崁-林口</p>
+                    <p>936 圓山-林口（經捷運A9)</p>
+                    <p>945 松山機場（行天宮）-林口（經捷運A9)</p>
+                    <div class="header">搭乘公車：在瑞士花園9站下車（步行約 16 分鐘）</div>
+                    <p>937 圓山-林口（經捷運A9)</p>
+                    <p>946副 內湖科技園區-林口（經捷運A9)</p>
+                    <div class="header">搭乘公車：在林口長庚醫院站下車（需步行出院區後轉乘上述公車）</div>
+                    <p>2000 台北長庚（行天宮）-林口長庚醫院（院區內）</p>
+                    <p>2001 台北車站（成淵高中）-林口長庚醫院（院區內）</p>
+                    <p>2003 桃園車站-林口長庚醫院（院區內）</p>
+                    <p>2004 中壢車站（啟英高中）-林口長庚醫院（院區內）</p>
+                </div>
+            </div>
+            <div class="ts icon message">
+                <i class="train icon"></i>
+                <div class="content">
+                    <div class="header">搭乘捷運：A8 長庚醫院 或 A9 林口 站下車。</div>
+                    <p>台北前往：搭乘機場捷運（紫）線往機場/中壢方向，轉乘公車。</p>
+                    <p>中壢/機場前往：搭乘機場捷運（紫）線往台北方向，轉乘公車。</p>
+                    <p>長庚醫院可搭乘直達車，下車需步行約 3 分鐘才抵達公車站。</p>
+                </div>
+            </div>
+            <div class="ts icon message">
+                <i class="bicycle icon"></i>
+                <div class="content">
+                    <div class="header">騎乘 YouBike：於 林口社區運動公園 站還車後，步行約 4 分鐘。</div>
+                    <p>租借點請查看：<a href="https://ntpc.youbike.com.tw">YouBike 官方網站</a></p>
+                </div>
+            </div>
+            <div class="ts icon message">
+                <i class="car icon"></i>
+                <div class="content">
+                    <div class="header">搭乘汽車：國道一號 41A 林口 交流道，行 文化一路一段 至 仁愛路二段 右轉，約 300 公尺，目的地在右側。</div>
+                    <p>校內不開放停車，請使用新北市政府路邊停車服務。</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <script>
+            function myFunction() {
+                location.href = "index.html";
+            }
+        </script>
+        
+        <div class="ts modals dimmer">
+            <dialog id="closableModal" class="ts closable tiny modal">
+                <div class="content">
+                    <p>網頁尚在製作中。<br>This page is coming soon.</p>
+                </div>
+                <div class="actions">
+                    <button class="ts positive button">
+                        Got it.
+                    </button>
+                </div>
+            </dialog>
+        </div>
+        
+        <script type="text/javascript">
+    		var isIE = navigator.userAgent.search("MSIE") > -1; 
+        	var isIE7 = navigator.userAgent.search("MSIE 7") > -1; 
+        	if (isIE7) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+        	if (isIE) { 
+	    		document.location.href="anti-ie.html";
+        	} 
+    	</script>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    <br>
+	    <br>
+	    <br>
+	    <footer>
+	        <div class="ts fluid container">
+	            <div class="ts fluid inverted segment">
+	                <h2 class="ts center aligned inverted header">
+                    <span class="large device only">九林年代：林口高中畢業舞會</span>
+                <div class="sub header">Copyright © 2018 LKCA. All Rights Reserved.</div>
+                </h2>
+	            </div>
+	        </div>
+	    </footer>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    </body>
+	    </html>
